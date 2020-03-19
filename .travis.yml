@@ -10,4 +10,4 @@ cache:
   - $HOME/.ivy2
 
 jdk:
-  - oraclejdk8
+  - openjdk8
