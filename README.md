@@ -1,18 +1,20 @@
-[![Known Vulnerabilities](https://snyk.io/test/github/benjaminjacobberg/authentikat-jwt/badge.svg?targetFile=build.sbt)](https://snyk.io/test/github/benjaminjacobberg/authentikat-jwt?targetFile=build.sbt) 
-
 # LOOKING FOR MAINTAINER
 Sorry guys - I'm having a hard time maintaining this library right now. There are several other JWT libraries that are much more mature than this as they have been maintained and used quite rigorously. This is a security library and was my own weekend hack project to start. I never ran it in production - I was just mostly curious about JWT as a standard in its early days. But it picked up a fair number of users.
 I'd recommend you use the best supported and most widely used JWT implementation you can find! JWT is widely criticized in the security community so if you're going to use it, you should ensure that the implementation is very well used, and has had lots of eyes on it, and given the explosion of knowledge and interest, and especially the number of imperfect implementations, I feel that it is in your best interest to try to use the most mature code you can for these concerns if you're going to implement security features with JWT. 
 
-authentikat-jwt - Claims Based JWT Implementation for Scala
-===========================================================
+authentikat-jwt
+===============
 
 ![Build Status](https://travis-ci.org/jasongoodwin/authentikat-jwt.svg?branch=master)
 ![Current Version](https://img.shields.io/badge/version-0.4.5-brightgreen.svg?style=flat "0.4.5")
 [![Apache 2.0 License](https://img.shields.io/badge/license-Apache%202-blue.svg)](LICENSE)
+[![Known Vulnerabilities](https://snyk.io/test/github/benjaminjacobberg/authentikat-jwt/badge.svg?targetFile=build.sbt)](https://snyk.io/test/github/benjaminjacobberg/authentikat-jwt?targetFile=build.sbt) 
 [![Join the chat at https://gitter.im/jasongoodwin/authentikat-jwt](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jasongoodwin/authentikat-jwt?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-A simple scala-jwt library.
+Summary
+-------
+
+A simple claims based JWT implementation for Scala.
 JWT - pronounced 'jot' - is a claims-based authentication standard. 
 
 0.4.5
@@ -28,7 +30,6 @@ Currently 1.0.0-M1 is in central which has experimental changes:
 - Because the verifier must be explicitly passed, the API is inherently safer in ensuring the token is signed with the expected algorithm.
 
 When released, the API will contain additional methods to aid in validating different areas of the tokens.
-
 
 Setup
 =====
@@ -227,4 +228,5 @@ See attached [LICENSE](LICENSE) file. Apache2 licenced.
 Contributors
 ============
 
-Jason Goodwin
+Jason Goodwin <https://github.com/jasongoodwin>
+Benjamin Jacob Berg <https://github.com/benjaminjacobberg>
