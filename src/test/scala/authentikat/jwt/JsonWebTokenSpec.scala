@@ -48,9 +48,9 @@ class JsonWebTokenSpec extends FunSpec with Matchers {
     it("should be extracted by extractor") {
       val jwt = JsonWebToken.apply(header, claims, "secretkey")
       val result = jwt match {
-        case JsonWebToken(x, y, z) ⇒
+        case JsonWebToken(x, y, z) =>
           true
-        case x ⇒
+        case x =>
           false
       }
       result should equal(true)
@@ -60,9 +60,9 @@ class JsonWebTokenSpec extends FunSpec with Matchers {
 
       val jwt = JsonWebToken.apply(header, claims, "secretkey")
       val result = jwt match {
-        case JsonWebToken(x, y, z) ⇒
+        case JsonWebToken(x, y, z) =>
           Some(y)
-        case x ⇒
+        case x =>
           None
       }
 
@@ -131,9 +131,9 @@ class JsonWebTokenSpec extends FunSpec with Matchers {
     val jwt: String = JsonWebToken(header, claimsSet, "secretkey")
 
     val parsedClaims: Option[Map[String, String]] = jwt match {
-      case JsonWebToken(header, claimsSet, signature) ⇒
+      case JsonWebToken(header, claimsSet, signature) =>
         claimsSet.asSimpleMap.toOption
-      case _ ⇒
+      case _ =>
         None
     }
 
