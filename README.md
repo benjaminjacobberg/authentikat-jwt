@@ -1,7 +1,3 @@
-# LOOKING FOR MAINTAINER
-Sorry guys - I'm having a hard time maintaining this library right now. There are several other JWT libraries that are much more mature than this as they have been maintained and used quite rigorously. This is a security library and was my own weekend hack project to start. I never ran it in production - I was just mostly curious about JWT as a standard in its early days. But it picked up a fair number of users.
-I'd recommend you use the best supported and most widely used JWT implementation you can find! JWT is widely criticized in the security community so if you're going to use it, you should ensure that the implementation is very well used, and has had lots of eyes on it, and given the explosion of knowledge and interest, and especially the number of imperfect implementations, I feel that it is in your best interest to try to use the most mature code you can for these concerns if you're going to implement security features with JWT. 
-
 authentikat-jwt
 ===============
 
@@ -34,7 +30,7 @@ When released, the API will contain additional methods to aid in validating diff
 Setup
 =====
 
-Authentikat-Jwt has been published for scala 2.10, 2.11 and 2.12:
+Authentikat-Jwt has been published for scala 2.10, 2.11, 2.12, and 2.13:
 
 Add the resolver and the dependency:
 
@@ -228,5 +224,5 @@ See attached [LICENSE](LICENSE) file. Apache2 licenced.
 Contributors
 ============
 
-Jason Goodwin <https://github.com/jasongoodwin>
-Benjamin Jacob Berg <https://github.com/benjaminjacobberg>
+* Jason Goodwin <https://github.com/jasongoodwin>
+* Benjamin Jacob Berg <https://github.com/benjaminjacobberg>

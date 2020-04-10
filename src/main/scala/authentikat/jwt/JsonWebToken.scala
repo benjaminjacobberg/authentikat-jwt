@@ -37,7 +37,7 @@ object JsonWebToken extends JsonMethods {
 
   def unapply(jwt: String): Option[(JwtHeader, JwtClaimsSetJValue, String)] = {
     jwt.split("\\.") match {
-      case Array(providedHeader, providedClaims, providedSignature) ⇒
+      case Array(providedHeader, providedClaims, providedSignature) =>
         import org.json4s.DefaultFormats
         implicit val formats = DefaultFormats
 
@@ -56,7 +56,7 @@ object JsonWebToken extends JsonMethods {
 
           Some(header.get, claimsSet, signature)
         }
-      case _ ⇒
+      case _ =>
         None
     }
   }
@@ -76,7 +76,7 @@ object JsonWebToken extends JsonMethods {
     implicit val formats = DefaultFormats
 
     jwt.split("\\.") match {
-      case Array(providedHeader, providedClaims, providedSignature) ⇒
+      case Array(providedHeader, providedClaims, providedSignature) =>
 
         val headerJsonString = new String(decodeBase64(providedHeader), "UTF-8")
         val header = JwtHeader.fromJsonStringOpt(headerJsonString).getOrElse(JwtHeader(None, None, None))
@@ -85,7 +85,7 @@ object JsonWebToken extends JsonMethods {
           JsonWebSignature(header.algorithm.getOrElse("none"), providedHeader + "." + providedClaims, key))
 
         java.security.MessageDigest.isEqual(providedSignature.getBytes(), signature.getBytes())
-      case _ ⇒
+      case _ =>
         false
     }
   }
