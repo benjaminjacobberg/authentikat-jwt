@@ -64,3 +64,7 @@ credentials += Credentials("Sonatype Nexus Repository Manager",
   "oss.sonatype.org",
   "<your username>",
   "<your password>")
+
+
+bintrayOrganization := Some("signalpath")
+bintrayRepository := "scala"
