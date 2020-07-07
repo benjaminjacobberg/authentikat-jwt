@@ -68,3 +68,5 @@ credentials += Credentials("Sonatype Nexus Repository Manager",
 
 bintrayOrganization := Some("signalpath")
 bintrayRepository := "scala"
+
+licenses += ("Apache-2.0", url("http://www.apache.org/licenses/LICENSE-2.0.html"))
