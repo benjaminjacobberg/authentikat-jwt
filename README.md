@@ -2,7 +2,7 @@ authentikat-jwt
 ===============
 
 ![Build Status](https://travis-ci.org/jasongoodwin/authentikat-jwt.svg?branch=master)
-![Current Version](https://img.shields.io/badge/version-0.4.5-brightgreen.svg?style=flat "0.4.5")
+![Current Version](https://img.shields.io/badge/version-0.4.6-brightgreen.svg?style=flat "0.4.6")
 [![Apache 2.0 License](https://img.shields.io/badge/license-Apache%202-blue.svg)](LICENSE)
 [![Known Vulnerabilities](https://snyk.io/test/github/benjaminjacobberg/authentikat-jwt/badge.svg?targetFile=build.sbt)](https://snyk.io/test/github/benjaminjacobberg/authentikat-jwt?targetFile=build.sbt) 
 [![Join the chat at https://gitter.im/jasongoodwin/authentikat-jwt](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jasongoodwin/authentikat-jwt?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
@@ -13,9 +13,9 @@ Summary
 A simple claims based JWT implementation for Scala.
 JWT - pronounced 'jot' - is a claims-based authentication standard. 
 
-0.4.5
+0.4.6
 =====
-Please update to 0.4.5 as soon as possible. Previous versions may be vulnerable to injection in cases where user controls values in the claims. 
+Please update to 0.4.6 as soon as possible. Previous versions may be vulnerable to injection in cases where user controls values in the claims. 
 
 1.0.0 Milestone Status
 ======================
