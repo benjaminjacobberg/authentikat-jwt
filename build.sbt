@@ -17,7 +17,7 @@ libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "3.1.1" % Test
 )
 
-dependencyOverrides += "com.fasterxml.jackson.core" % "jackson-databind" % "2.10.3"
+dependencyOverrides += "com.fasterxml.jackson.core" % "jackson-databind" % "2.10.5.1"
 
 credentials += Credentials(Path.userHome / ".mdialog.credentials")
 
